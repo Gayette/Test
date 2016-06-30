@@ -1,0 +1,40 @@
+
+gael@gael-Vostro-3558:~/Bureau$ git clone https://github.com/Gayette/Test.git
+Clonage dans 'Test'...
+warning: Vous semblez avoir cloné un dépôt vide.
+Vérification de la connectivité... fait.
+gael@gael-Vostro-3558:~/Bureau/Test$ touch index.html
+gael@gael-Vostro-3558:~/Bureau/Test$ ls
+index.html
+gael@gael-Vostro-3558:~/Bureau/Test$ git status
+Sur la branche master
+
+Validation initiale
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	index.html
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+gael@gael-Vostro-3558:~/Bureau/Test$ git add index.html 
+gael@gael-Vostro-3558:~/Bureau/Test$ git status
+Sur la branche master
+
+Validation initiale
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier : index.html
+gael@gael-Vostro-3558:~/Bureau/Test$ git commit -m "aide git"
+[master (commit racine) 453594b] aide git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+gael@gael-Vostro-3558:~/Bureau/Test$ git log
+commit 453594b95e11a9878537ca54ceecfd85174a9805
+Author: Gayette <gaelventurin@hotmail.fr>
+Date:   Thu Jun 30 14:54:09 2016 +0200
+
+    aide git
+
