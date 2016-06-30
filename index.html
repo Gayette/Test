@@ -52,4 +52,69 @@ gael@gael-Vostro-3558:~/Bureau/Test$ git add index.html
 gael@gael-Vostro-3558:~/Bureau/Test$ git commit -m "ajout dans aide"
 [master c77a94f] ajout dans aide
  1 file changed, 40 insertions(+)
+diff --git a/index.html b/index.html
+index 613b02c..23879f7 100644
+--- a/index.html
++++ b/index.html
+@@ -37,4 +37,19 @@ Author: Gayette <gaelventurin@hotmail.fr>
+ Date:   Thu Jun 30 14:54:09 2016 +0200
+
+ gael@gael-Vostro-3558:~/Bureau/Test$ git diff
+
+     aide git
++gael@gael-Vostro-3558:~/Bureau/Test$ git status
++Sur la branche master
++Votre branche est basée sur 'origin/master', mais la branche amont a disparu.
++  (utilisez "git branch --unset-upstream" pour corriger)
++Modifications qui ne seront pas validées :
++  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
++  (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
++
++       modifié :         index.html
++
++aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
++gael@gael-Vostro-3558:~/Bureau/Test$ git add index.html 
++gael@gael-Vostro-3558:~/Bureau/Test$ git commit -m "ajout dans aide"
+:
+gael@gael-Vostro-3558:~/Bureau/Test$ git add *
+gael@gael-Vostro-3558:~/Bureau/Test$ git commit -m "ajout"
+[master d3269ac] ajout
+ 1 file changed, 15 insertions(+)
+gael@gael-Vostro-3558:~/Bureau/Test$ git log
+commit d3269ac92616b5bd5efcc8618886e0bb89c28220
+Author: Gayette <gaelventurin@hotmail.fr>
+Date:   Thu Jun 30 15:02:21 2016 +0200
+
+    ajout
+
+commit c77a94f6c3dcd49cf62b28a5b70d9727102f8962
+Author: Gayette <gaelventurin@hotmail.fr>
+Date:   Thu Jun 30 14:56:54 2016 +0200
+
+    ajout dans aide
+
+commit 453594b95e11a9878537ca54ceecfd85174a9805
+Author: Gayette <gaelventurin@hotmail.fr>
+Date:   Thu Jun 30 14:54:09 2016 +0200
+
+    aide git
+gael@gael-Vostro-3558:~/Bureau/Test$ 
+
+gael@gael-Vostro-3558:~/Bureau/Test$ git log --patch
+
+
+gael@gael-Vostro-3558:~/Bureau/Test$ touch style.css
+gael@gael-Vostro-3558:~/Bureau/Test$ ls
+index.html  style.css
+gael@gael-Vostro-3558:~/Bureau/Test$ git add style.css 
+gael@gael-Vostro-3558:~/Bureau/Test$ git commit -m "style"
+[master 39539ec] style
+ 1 file changed, 1 insertion(+)
+ create mode 100644 style.css
+gael@gael-Vostro-3558:~/Bureau/Test$ git status
+Sur la branche master
+Votre branche est basée sur 'origin/master', mais la branche amont a disparu.
+  (utilisez "git branch --unset-upstream" pour corriger)
+rien à valider, la copie de travail est propre
+
 
